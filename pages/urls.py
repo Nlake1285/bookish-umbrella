@@ -1,8 +1,8 @@
 # pages/urls.py
 from django.urls import path
 
-from .views import home_page_view
+from .views import post_list
 
 urlpatterns = [
-    path("", home_page_view),
+    path("", post_list, name="post-list"),
 ]
